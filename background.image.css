@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('Mideterranian Haven.avif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 40vh;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
