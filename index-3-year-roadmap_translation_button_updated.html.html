@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strategic 3-Year Roadmap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      padding: 30px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffff00;
+    }
+
+    /* Roadmap Table */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;
+      background: #111;
+      color: #fff;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 12px;
+      text-align: center;
+      vertical-align: top;
+    }
+    .main-header {
+      background-color: #4a86e8;
+      color: #ffff00;
+      font-size: 20px;
+    }
+
+    /* Language Buttons */
+    .lang-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0 20px;
+    }
+    .lang-buttons button {
+      background-color: #0b5394;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .lang-buttons button:hover {
+      background-color: #4a86e8;
+    }
+    .lang-buttons button.active {
+      background-color: #ffb900;
+      color: #000;
+      font-weight: bold;
+    }
+
+    /* Translation Box (Card Style) */
+    #translationBox {
+      margin: 0 auto;
+      margin-top: 20px;
+      max-width: 700px;
+      padding: 20px;
+      background: #fffde7;
+      border: 2px solid #000;
+      border-radius: 10px;
+      color: #000;
+      font-size: 16px;
+      line-height: 1.6;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Strategic 3-Year Roadmap</h1>
+
+  <table>
+    <tr class="main-header">
+      <th>Goal</th>
+      <th>2026</th>
+      <th>2027</th>
+      <th>2028</th>
+    </tr>
+    <tr>
+      <td>Career</td>
+      <td>*Masteral<br>*Master Web Development<br>*Invest Parcel Lands</td>
+      <td>*Doctoral<br>*Full Stack Python<br>*Buy Farm Lots<br>*Grow Real Estate</td>
+      <td>*Dean<br>*Outsourcing Business Owner<br>*Farm and Home Steading</td>
+    </tr>
+    <tr>
+      <td>Family</td>
+      <td>*Start Educational Fund for Kids</td>
+      <td>*New House</td>
+      <td>*New Car</td>
+    </tr>
+  </table>
+
+  <h1>Multi-Language Translation</h1>
+
+  <!-- Language Buttons -->
+  <div class="lang-buttons">
+    <button onclick="showTranslation('english')" class="active">English</button>
+    <button onclick="showTranslation('filipino')">Filipino</button>
+    <button onclick="showTranslation('chinese')">Chinese</button>
+    <button onclick="showTranslation('japanese')">Japanese</button>
+  </div>
+
+  <!-- Translation Box -->
+  <div id="translationBox">
+    Like the rising sun, sometimes hidden by clouds yet never absent, I rise with hope each day. Guided by a driven mind and strengthened by resilience, I transform failures into lessons and challenges into stepping stones. Dislike and setbacks do not deter me—they refine me. With every dawn, I embrace renewal, growth, and the unwavering pursuit of creating the life I strive for.
+  </div>
+
+  <script>
+    function showTranslation(lang) {
+      let text = "";
+
+      if (lang === "english") {
+        text = "Like the rising sun, sometimes hidden by clouds yet never absent, I rise with hope each day. Guided by a driven mind and strengthened by resilience, I transform failures into lessons and challenges into stepping stones. Dislike and setbacks do not deter me—they refine me. With every dawn, I embrace renewal, growth, and the unwavering pursuit of creating the life I strive for.";
+      } else if (lang === "filipino") {
+        text = "Gaya ng pagsikat ng araw, na minsang natatabunan ng ulap ngunit kailanman ay hindi nawawala, ako’y bumabangon araw-araw na may pag-asa. Gabay ng isang matatag na isipan at pinalalakas ng katatagan, ginagawa kong aral ang bawat pagkabigo at hakbang ang bawat pagsubok. Ang pangungutya at mga hadlang ay hindi nakahihinto sa akin—sila’y humuhubog sa akin. Sa bawat umaga, niyayakap ko ang panibagong simula, paglago, at ang walang sawang pagsusumikap na likhain ang buhay na aking minimithi.";
+      } else if (lang === "chinese") {
+        text = "就像旭日东升，有时被乌云遮掩，却从未缺席；我每天都带着希望而起身。怀抱坚定的心志，并以坚韧为力量，我将失败化为经验，把挑战化为垫脚石。冷眼与挫折不能阻止我——它们只会锤炼我。每一个清晨，我都拥抱新生、成长，并坚定不移地追寻我所渴望的人生。";
+      } else if (lang === "japanese") {
+        text = "昇る太陽のように、時には雲に隠れて見えなくても、決して消えることはない。私は毎日、希望とともに立ち上がる。揺るぎない心に導かれ、そして resilience（しなやかな強さ）によって支えられ、失敗を学びへと変え、試練を踏み台へと変えていく。拒絶や逆境に屈することはない――それらはむしろ私を磨き上げる。新しい夜明けのたびに、私は再生と成長を抱きしめ、望む人生を築くために歩み続ける。";
+      }
+
+      // update box text
+      document.getElementById("translationBox").innerText = text;
+
+      // highlight active button
+      document.querySelectorAll(".lang-buttons button").forEach(btn => btn.classList.remove("active"));
+      event.target.classList.add("active");
+    }
+  </script>
+</body>
+</html>
