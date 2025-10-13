@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Prisma - Professional Artist Portfolio</title>
+  <link rel="stylesheet" href="C:\Users\Admin\Desktop\My HTML Projects\Le Prisma Art Portfolio.css">
+  <style>
+    /* News ticker container */
+    .ticker {
+      width: 100%;
+      overflow: hidden;
+      background: #111; /* dark strip behind slogan */
+      padding: 5px 0;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .ticker-track {
+      display: flex;
+      white-space: nowrap;
+      animation: scrollLeft 15s linear infinite;
+    }
+
+    .ticker:hover .ticker-track {
+      animation-play-state: paused;
+    }
+
+    .ticker span {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #3498db;
+      padding-right: 50px;
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* MAIN background image section */
+    main {
+      min-height: 100vh;
+      background: 
+      url('Mideterranian Haven.avif') no-repeat center center / cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      text-shadow: 4px 4px 12px rgba(0,0,0,0.7);
+    }
+
+    .hero-content p {
+      max-width: 600px;
+      margin: 20px auto;
+      text-shadow: 4px 4px 10px rgba(0,0,0,5);
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #1e6ea8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div style="font-family:'Arial', sans-serif;font-size:20px;font-weight:bold;color:#1e90ff;text-shadow:0 0 5px #1e90ff,0 0 10px #1e90ff,0 0 20px #1e90ff,0 0 40px #001133,2px 2px 6px #001133;letter-spacing:1px;">Le Prisma</div>
+
+      <ul class="nav-links">
+        <li><a href="https://jspaintings.wixsite.com/leprisma" target="_blank">Home</a></li>
+        <li><a href="https://jspaintings.wixsite.com/leprisma/about-us" target="_blank">About Me</a></li>
+        <li><a href="https://jspaintings.wixsite.com/leprisma?lightbox=i0fh9" target="_blank">My Gallery</a></li>
+      </ul>
+    </nav>
+
+    <div class="ticker">
+      <div class="ticker-track">
+        <span> Be the prism. Share the light. | Revealing the colors within you. | Simple prism. Endless brilliance. | Helping you shine brighter. Turning light into inspiration. | Every spark creates a spectrum. Be the prism. Share the light. | Transforming light into connection. Illuminating lives, one ray at a time. </span>
+        <span> Be the prism. Share the light. | Revealing the colors within you. | Simple prism. Endless brilliance. | Helping you shine brighter. Turning light into inspiration. | Every spark creates a spectrum. Be the prism. Share the light. | Transforming light into connection. Illuminating lives, one ray at a time. </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Le Prisma Art Studio</h1>
+        <p>Think of us as a prism—simple on its own, yet powerful enough to reveal vibrant colors when light passes through.</p>
+        <p>That’s what we believe in: helping you shine in ways you may not even realize.</p>
+        <p>Just as a prism deflects and reflects light, you too can bring brightness, perspective, and inspiration into someone else’s life today.</p> 
+        <p>Here, we celebrate those moments of connection, clarity, and transformation—because even the smallest spark of light can change everything.</p>
+        <a href="https://jspaintings.wixsite.com/leprisma" class="cta-button" target="_blank">View My Work</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2015 by Jerson Saladen's Paintings. All rights reserved  | Professional Artist Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
